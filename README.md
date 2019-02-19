@@ -3,6 +3,11 @@
 <strong><code>v0.1.0a</code></strong>
 
 <p>This is a basic project that demostrate the use of HTML5, CSS3 & JS (with ES5) to create a game, all rendered with pure JS and some libs, such as createjs.</p>
+
+<strong><code>v0.2.1a</code></strong>
+
+<p>On this version of the project I created 2 animations, witch the 1st is the background created by keyframes, simulating the outer-space movement and the other has a combine animation functions, such as keyframes and pure JS (with setTimeout) for the iterations of differents screens that simulates the loading screen on the canvas, so at the time the game loaded properly, will be closed.</p>
+<br/>
 <hr>
 <h6>About the Project:</h6>
 <ul>

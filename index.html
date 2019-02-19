@@ -8,6 +8,7 @@
   <title>Juego Arcade | Space Invaders Copy-cat</title>
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/space-anim.css">
 </head>
 
 <body>
@@ -16,8 +17,23 @@
     <a href="index.html" class="btn btn-float lime darken-4 text-light-blue text-lighten-4">Play Again</a>
   </div>
 
-  <div id="juego">
-    
+  <div id="juego" class="space-bckgrnd">
+
+  </div>
+
+  <div class="load" id="load">
+    <div class="load-1 row" id="load_1">
+      <h2 class="col s6 push-s1">Loading </h2>
+      <h2 class="col s6 pull-s1 z-index">.</h2>
+    </div>
+    <div class="load-2 row" id="load_2">
+      <h2 class="col s6 push-s1">Loading </h2>
+      <h2 class="col s6 pull-s1 hidden">..</h2>
+    </div>
+    <div class="load-3 row" id="load_3">
+      <h2 class="col s6 push-s1">Loading </h2>
+      <h2 class="col s6 pull-s1 hidden">...</h2>
+    </div>
   </div>
 
   <div class="row controls brown darken-4">

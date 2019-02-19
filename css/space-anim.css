@@ -1,0 +1,1024 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+div.space-bckgrnd {
+  background: url('../assets/background/outer_space-1.jpg') no-repeat fixed;
+  background-size: 600px 600px;
+  -webkit-animation: space_anim 1.33s ease-in-out infinite;
+  animation: space-anim 1.33s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+
+div[class^='load-'] {
+  background-color: #ffab00a1;
+  width: 100%;
+  position: absolute;
+  min-height: 200px;
+  animation: blink 1250ms infinite;
+  color: #212121;
+  top: 200px;
+  padding: 2rem 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: monospace;
+}
+
+div[class^='load-']>h2.z-index {
+  z-index: 99;
+}
+
+div.load {
+  background-color: #c0c0c0f1;
+  top: 0;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  box-shadow: inset 0 0 150px 150px #262626a1;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ffe57fa1;
+  }
+  25% {
+    background-color: #ffab00a1;
+  }
+  50% {
+    background-color: #ffe57fa1;
+  }
+  75% {
+    background-color: #ffab00a1;
+  }
+  100% {
+    background-color: #ffe57fa1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    background-color: #ffe57fa1;
+  }
+  25% {
+    background-color: #ffab00a1;
+  }
+  50% {
+    background-color: #ffe57fa1;
+  }
+  75% {
+    background-color: #ffab00a1;
+  }
+  100% {
+    background-color: #ffe57fa1;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    background-color: #ffe57fa1;
+  }
+  25% {
+    background-color: #ffab00a1;
+  }
+  50% {
+    background-color: #ffe57fa1;
+  }
+  75% {
+    background-color: #ffab00a1;
+  }
+  100% {
+    background-color: #ffe57fa1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ffe57fa1;
+  }
+  25% {
+    background-color: #ffab00a1;
+  }
+  50% {
+    background-color: #ffe57fa1;
+  }
+  75% {
+    background-color: #ffab00a1;
+  }
+  100% {
+    background-color: #ffe57fa1;
+  }
+}
+
+@-webkit-keyframes space-anim {
+  2.222% {
+    background: url('../assets/background/outer_space-2.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  4.444% {
+    background: url('../assets/background/outer_space-3.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  6.666% {
+    background: url('../assets/background/outer_space-4.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  8.888% {
+    background: url('../assets/background/outer_space-5.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  11.111% {
+    background: url('../assets/background/outer_space-6.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  13.333% {
+    background: url('../assets/background/outer_space-7.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  15.555% {
+    background: url('../assets/background/outer_space-8.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  17.777% {
+    background: url('../assets/background/outer_space-9.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  19.999% {
+    background: url('../assets/background/outer_space-10.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  22.221% {
+    background: url('../assets/background/outer_space-11.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  24.443% {
+    background: url('../assets/background/outer_space-12.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  26.665% {
+    background: url('../assets/background/outer_space-13.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  28.887% {
+    background: url('../assets/background/outer_space-14.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  31.109% {
+    background: url('../assets/background/outer_space-15.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  33.331% {
+    background: url('../assets/background/outer_space-16.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  35.553% {
+    background: url('../assets/background/outer_space-17.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  37.775% {
+    background: url('../assets/background/outer_space-18.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  39.997% {
+    background: url('../assets/background/outer_space-19.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  42.219% {
+    background: url('../assets/background/outer_space-20.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  44.431% {
+    background: url('../assets/background/outer_space-21.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  46.653% {
+    background: url('../assets/background/outer_space-22.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  48.875% {
+    background: url('../assets/background/outer_space-23.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  51.097% {
+    background: url('../assets/background/outer_space-24.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  53.119% {
+    background: url('../assets/background/outer_space-25.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  54.341% {
+    background: url('../assets/background/outer_space-26.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  56.563% {
+    background: url('../assets/background/outer_space-27.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  58.785% {
+    background: url('../assets/background/outer_space-28.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  61.007% {
+    background: url('../assets/background/outer_space-29.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  63.229% {
+    background: url('../assets/background/outer_space-30.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  65.451% {
+    background: url('../assets/background/outer_space-31.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  67.673% {
+    background: url('../assets/background/outer_space-32.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  69.895% {
+    background: url('../assets/background/outer_space-33.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  72.117% {
+    background: url('../assets/background/outer_space-34.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  74.339% {
+    background: url('../assets/background/outer_space-35.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  76.561% {
+    background: url('../assets/background/outer_space-36.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  78.783% {
+    background: url('../assets/background/outer_space-37.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  81.005% {
+    background: url('../assets/background/outer_space-38.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  83.227% {
+    background: url('../assets/background/outer_space-39.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  85.449% {
+    background: url('../assets/background/outer_space-40.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  87.671% {
+    background: url('../assets/background/outer_space-41.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  89.893% {
+    background: url('../assets/background/outer_space-42.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  92.115% {
+    background: url('../assets/background/outer_space-43.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  95.337% {
+    background: url('../assets/background/outer_space-44.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  97.559% {
+    background: url('../assets/background/outer_space-45.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  99.781% {
+    background: url('../assets/background/outer_space-1.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+}
+
+@-moz-keyframes space-anim {
+  2.222% {
+    background: url('../assets/background/outer_space-2.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  4.444% {
+    background: url('../assets/background/outer_space-3.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  6.666% {
+    background: url('../assets/background/outer_space-4.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  8.888% {
+    background: url('../assets/background/outer_space-5.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  11.111% {
+    background: url('../assets/background/outer_space-6.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  13.333% {
+    background: url('../assets/background/outer_space-7.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  15.555% {
+    background: url('../assets/background/outer_space-8.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  17.777% {
+    background: url('../assets/background/outer_space-9.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  19.999% {
+    background: url('../assets/background/outer_space-10.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  22.221% {
+    background: url('../assets/background/outer_space-11.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  24.443% {
+    background: url('../assets/background/outer_space-12.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  26.665% {
+    background: url('../assets/background/outer_space-13.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  28.887% {
+    background: url('../assets/background/outer_space-14.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  31.109% {
+    background: url('../assets/background/outer_space-15.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  33.331% {
+    background: url('../assets/background/outer_space-16.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  35.553% {
+    background: url('../assets/background/outer_space-17.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  37.775% {
+    background: url('../assets/background/outer_space-18.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  39.997% {
+    background: url('../assets/background/outer_space-19.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  42.219% {
+    background: url('../assets/background/outer_space-20.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  44.431% {
+    background: url('../assets/background/outer_space-21.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  46.653% {
+    background: url('../assets/background/outer_space-22.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  48.875% {
+    background: url('../assets/background/outer_space-23.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  51.097% {
+    background: url('../assets/background/outer_space-24.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  53.119% {
+    background: url('../assets/background/outer_space-25.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  54.341% {
+    background: url('../assets/background/outer_space-26.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  56.563% {
+    background: url('../assets/background/outer_space-27.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  58.785% {
+    background: url('../assets/background/outer_space-28.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  61.007% {
+    background: url('../assets/background/outer_space-29.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  63.229% {
+    background: url('../assets/background/outer_space-30.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  65.451% {
+    background: url('../assets/background/outer_space-31.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  67.673% {
+    background: url('../assets/background/outer_space-32.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  69.895% {
+    background: url('../assets/background/outer_space-33.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  72.117% {
+    background: url('../assets/background/outer_space-34.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  74.339% {
+    background: url('../assets/background/outer_space-35.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  76.561% {
+    background: url('../assets/background/outer_space-36.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  78.783% {
+    background: url('../assets/background/outer_space-37.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  81.005% {
+    background: url('../assets/background/outer_space-38.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  83.227% {
+    background: url('../assets/background/outer_space-39.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  85.449% {
+    background: url('../assets/background/outer_space-40.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  87.671% {
+    background: url('../assets/background/outer_space-41.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  89.893% {
+    background: url('../assets/background/outer_space-42.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  92.115% {
+    background: url('../assets/background/outer_space-43.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  95.337% {
+    background: url('../assets/background/outer_space-44.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  97.559% {
+    background: url('../assets/background/outer_space-45.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  99.781% {
+    background: url('../assets/background/outer_space-1.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+}
+
+@-o-keyframes space-anim {
+  2.222% {
+    background: url('../assets/background/outer_space-2.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  4.444% {
+    background: url('../assets/background/outer_space-3.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  6.666% {
+    background: url('../assets/background/outer_space-4.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  8.888% {
+    background: url('../assets/background/outer_space-5.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  11.111% {
+    background: url('../assets/background/outer_space-6.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  13.333% {
+    background: url('../assets/background/outer_space-7.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  15.555% {
+    background: url('../assets/background/outer_space-8.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  17.777% {
+    background: url('../assets/background/outer_space-9.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  19.999% {
+    background: url('../assets/background/outer_space-10.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  22.221% {
+    background: url('../assets/background/outer_space-11.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  24.443% {
+    background: url('../assets/background/outer_space-12.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  26.665% {
+    background: url('../assets/background/outer_space-13.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  28.887% {
+    background: url('../assets/background/outer_space-14.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  31.109% {
+    background: url('../assets/background/outer_space-15.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  33.331% {
+    background: url('../assets/background/outer_space-16.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  35.553% {
+    background: url('../assets/background/outer_space-17.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  37.775% {
+    background: url('../assets/background/outer_space-18.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  39.997% {
+    background: url('../assets/background/outer_space-19.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  42.219% {
+    background: url('../assets/background/outer_space-20.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  44.431% {
+    background: url('../assets/background/outer_space-21.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  46.653% {
+    background: url('../assets/background/outer_space-22.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  48.875% {
+    background: url('../assets/background/outer_space-23.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  51.097% {
+    background: url('../assets/background/outer_space-24.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  53.119% {
+    background: url('../assets/background/outer_space-25.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  54.341% {
+    background: url('../assets/background/outer_space-26.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  56.563% {
+    background: url('../assets/background/outer_space-27.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  58.785% {
+    background: url('../assets/background/outer_space-28.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  61.007% {
+    background: url('../assets/background/outer_space-29.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  63.229% {
+    background: url('../assets/background/outer_space-30.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  65.451% {
+    background: url('../assets/background/outer_space-31.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  67.673% {
+    background: url('../assets/background/outer_space-32.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  69.895% {
+    background: url('../assets/background/outer_space-33.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  72.117% {
+    background: url('../assets/background/outer_space-34.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  74.339% {
+    background: url('../assets/background/outer_space-35.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  76.561% {
+    background: url('../assets/background/outer_space-36.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  78.783% {
+    background: url('../assets/background/outer_space-37.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  81.005% {
+    background: url('../assets/background/outer_space-38.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  83.227% {
+    background: url('../assets/background/outer_space-39.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  85.449% {
+    background: url('../assets/background/outer_space-40.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  87.671% {
+    background: url('../assets/background/outer_space-41.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  89.893% {
+    background: url('../assets/background/outer_space-42.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  92.115% {
+    background: url('../assets/background/outer_space-43.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  95.337% {
+    background: url('../assets/background/outer_space-44.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  97.559% {
+    background: url('../assets/background/outer_space-45.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  99.781% {
+    background: url('../assets/background/outer_space-1.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+}
+
+@keyframes space-anim {
+  2.222% {
+    background: url('../assets/background/outer_space-2.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  4.444% {
+    background: url('../assets/background/outer_space-3.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  6.666% {
+    background: url('../assets/background/outer_space-4.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  8.888% {
+    background: url('../assets/background/outer_space-5.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  11.111% {
+    background: url('../assets/background/outer_space-6.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  13.333% {
+    background: url('../assets/background/outer_space-7.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  15.555% {
+    background: url('../assets/background/outer_space-8.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  17.777% {
+    background: url('../assets/background/outer_space-9.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  19.999% {
+    background: url('../assets/background/outer_space-10.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  22.221% {
+    background: url('../assets/background/outer_space-11.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  24.443% {
+    background: url('../assets/background/outer_space-12.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  26.665% {
+    background: url('../assets/background/outer_space-13.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  28.887% {
+    background: url('../assets/background/outer_space-14.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  31.109% {
+    background: url('../assets/background/outer_space-15.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  33.331% {
+    background: url('../assets/background/outer_space-16.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  35.553% {
+    background: url('../assets/background/outer_space-17.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  37.775% {
+    background: url('../assets/background/outer_space-18.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  39.997% {
+    background: url('../assets/background/outer_space-19.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  42.219% {
+    background: url('../assets/background/outer_space-20.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  44.431% {
+    background: url('../assets/background/outer_space-21.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  46.653% {
+    background: url('../assets/background/outer_space-22.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  48.875% {
+    background: url('../assets/background/outer_space-23.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  51.097% {
+    background: url('../assets/background/outer_space-24.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  53.119% {
+    background: url('../assets/background/outer_space-25.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  54.341% {
+    background: url('../assets/background/outer_space-26.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  56.563% {
+    background: url('../assets/background/outer_space-27.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  58.785% {
+    background: url('../assets/background/outer_space-28.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  61.007% {
+    background: url('../assets/background/outer_space-29.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  63.229% {
+    background: url('../assets/background/outer_space-30.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  65.451% {
+    background: url('../assets/background/outer_space-31.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  67.673% {
+    background: url('../assets/background/outer_space-32.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  69.895% {
+    background: url('../assets/background/outer_space-33.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  72.117% {
+    background: url('../assets/background/outer_space-34.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  74.339% {
+    background: url('../assets/background/outer_space-35.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  76.561% {
+    background: url('../assets/background/outer_space-36.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  78.783% {
+    background: url('../assets/background/outer_space-37.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  81.005% {
+    background: url('../assets/background/outer_space-38.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  83.227% {
+    background: url('../assets/background/outer_space-39.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  85.449% {
+    background: url('../assets/background/outer_space-40.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  87.671% {
+    background: url('../assets/background/outer_space-41.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  89.893% {
+    background: url('../assets/background/outer_space-42.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  92.115% {
+    background: url('../assets/background/outer_space-43.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  95.337% {
+    background: url('../assets/background/outer_space-44.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  97.559% {
+    background: url('../assets/background/outer_space-45.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+
+  99.781% {
+    background: url('../assets/background/outer_space-1.jpg') no-repeat fixed;
+    background-size: 600px 600px;
+  }
+}
