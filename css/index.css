@@ -1,0 +1,133 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+  -moz-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+  -o-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+canvas {
+  box-shadow: 0 0 13px 2px #232323;
+  border: 1px solid #232323;
+}
+
+h1 {
+  color: #212121;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  padding: 1rem;
+  border-radius: 3px;
+  text-decoration-line: none;
+  font-size: 18px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#rotulo {
+  background-color: #fafafad1;
+  box-shadow: 0 0 1000px 500px rgba(139, 0, 0, 0.45);
+  position: absolute;
+  top: 50%;
+  padding: 1rem;
+  margin-top: -100px;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  vertical-align: central;
+  z-index: 99;
+}
+
+.hidden {
+  display: none;
+}
+
+#space_bckgrnd {
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 600px;
+}
+
+#juego {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  vertical-align: central;
+}
+
+.controls {
+  position: absolute;
+  width: 600px;
+  min-height: 300px;
+  top: 600px;
+  left: 50%;
+  margin-left: -300px;
+  flex-direction: row;
+  border: 2px solid #232323;
+  box-shadow: 0 0 13px 2px #232323;
+  margin-top: 1rem;
+  padding: 2.5rem;
+}
+
+.controls>div:not(:nth-child(1)) {
+  width: 123px;
+  height: 123px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100 !important;
+  color: #fafafa;
+}
+
+.controls>div:nth-child(1) {
+  color: #fafafa;
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 0;
+  margin: -1.75rem 0 2rem;
+}
+
+.controls>div.up>img {
+  width: 80px;
+  height: 80px;
+}
+
+.controls>div.left>img {
+  width: 80px;
+  height: 80px;
+}
+
+.controls>div.down>img {
+  width: 80px;
+  height: 80px;
+}
+
+.controls>div.right>img {
+  width: 80px;
+  height: 80px;
+}
+/*
+.controls>div.space {
+  top: 60rem;
+  left: 31.5rem;
+}
+
+.controls>div.space>span {
+  margin-left: 5.5rem;
+} */
