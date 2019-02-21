@@ -8,14 +8,17 @@
   const onComplete = Loader.prototype;
 
   Loader.prototype.initialize = function () {
-    console.log('Loader generated...');
+    this.loads = 0;
+    this.totals = 0;
+    
+    // console.log('Loader generated...');
   };
 
   Loader.prototype.loadImgs = function (list) {
     this.loads = 0;
     this.totals = list.length;
 
-    for (i = 0; i < this.totals; i++) {
+    for (let i = 0; i < this.totals; i++) {
       this.loadImg(list[i]);
     }
   }
@@ -27,10 +30,11 @@
     this[route] = image;
 
     image.onload = function(e) {
-      self.loadedImg();
+      self.loadedImg(e);
     }
 
     image.src = image.url = route;
+    // console.debug(image)
   }
 
   Loader.prototype.loadedImg = function () {

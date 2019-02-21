@@ -7,6 +7,13 @@
 <strong><code>v0.2.1a</code></strong>
 
 <p>On this version of the project I created 2 animations, witch the 1st is the background created by keyframes, simulating the outer-space movement and the other has a combine animation functions, such as keyframes and pure JS (with setTimeout) for the iterations of differents screens that simulates the loading screen on the canvas, so at the time the game loaded properly, will be closed.</p>
+
+<strong><code>v0.3.5b</code></strong>
+
+<p>On this version, added almost all the space-ship animations, such as movements. Since the game has the Space-Ship rendered, it can be move through clicks on the game screen or with the assigned key-binds as it shows on the UI. Shoots animations and SFX has not yet added to the game, but will do later.</p>
+
+<p>Code has been cleaned; less code comments and console.log/debug commented.</p>
+
 <br/>
 <hr>
 <h6>About the Project:</h6>
