@@ -14,27 +14,27 @@
 <body>
   <div id="rotulo" class="hidden">
     <h1>Game Over</h1>
-    <a href="index.html" class="btn btn-float lime darken-4 text-light-blue text-lighten-4">Play Again</a>
+    <a href="index.html" class="btn btn-float lime darken-4 text-light-blue text-lighten-4" id="play_again">Play Again</a>
   </div>
 
   <div id="juego" class="space-bckgrnd">
+    <div class="load" id="load">
+      <div class="load-1 row" id="load_1">
+        <h2 class="col s6 push-s1">Loading </h2>
+        <h2 class="col s6 pull-s1 z-index">.</h2>
+      </div>
+      <div class="load-2 row" id="load_2">
+        <h2 class="col s6 push-s1">Loading </h2>
+        <h2 class="col s6 pull-s1 hidden">..</h2>
+      </div>
+      <div class="load-3 row" id="load_3">
+        <h2 class="col s6 push-s1">Loading </h2>
+        <h2 class="col s6 pull-s1 hidden">...</h2>
+      </div>
+    </div>
 
   </div>
 
-  <div class="load" id="load">
-    <div class="load-1 row" id="load_1">
-      <h2 class="col s6 push-s1">Loading </h2>
-      <h2 class="col s6 pull-s1 z-index">.</h2>
-    </div>
-    <div class="load-2 row" id="load_2">
-      <h2 class="col s6 push-s1">Loading </h2>
-      <h2 class="col s6 pull-s1 hidden">..</h2>
-    </div>
-    <div class="load-3 row" id="load_3">
-      <h2 class="col s6 push-s1">Loading </h2>
-      <h2 class="col s6 pull-s1 hidden">...</h2>
-    </div>
-  </div>
 
   <div class="row controls brown darken-4">
     <div class="col s12 title center">
@@ -69,6 +69,8 @@
 <script src="js/vendor/ndgmr.Collision.js"></script>
 <script src="js/vendor/CocoonJSAudioPlugin.js"></script>
 
+<script src="js/enemy-container.js"></script>
+<script src="js/enemy.js"></script>
 <script src="js/loader.js"></script>
 <script src="js/spaceShip.js"></script>
 <script src="js/app.js"></script>

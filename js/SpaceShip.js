@@ -15,7 +15,7 @@
 
     const self = this;
 
-    console.log('Initializing SpaceShip');
+    //console.log('Initializing SpaceShip');
 
     this.x = 256;
     this.y = 50;
@@ -51,32 +51,47 @@
 
   SpaceShip.prototype.jump = function (e) {
     if ((e.stageX >= this.x) && (e.stageX < this.x + this.Width)) {
-
-    } else if (e.stageX > this.x)
+      window.app.playFire();
+    } else if (e.stageX > this.x) {
       this.velocity.x = +10;
-    else if (e.stageX < this.x)
+    } else if (e.stageX < this.x) {
       this.velocity.x = -10;
+    }
 
-    if ((e.stageY <= this.y - 20) && (e.stageY < this.y + this.Height))
+    if ((e.stageY <= this.y - 20) && (e.stageY < this.y + this.Height)) {
       this.velocity.y = -15;
-    else if (e.stageY > this.y - 20 && e.stageY < this.y + this.Height)
+    } else if (e.stageY > this.y - 20 && e.stageY < this.y + this.Height) {
       this.velocity.y = +0;
-    else
+    } else {
       this.velocity.y = +15;
+    }
 
     this.gotoAndPlay("fire");
   }
 
   SpaceShip.prototype.move = function (e) {
-    if (e.keyCode == 37 || e.which == 37)
+    if (e.keyCode == 37 || e.which == 37) {
+      window.app.playFire();
       this.velocity.x = -9;
-    else if (e.keyCode == 39 || e.which == 39)
+    } else if (e.keyCode == 39 || e.which == 39) {
+      window.app.playFire();
       this.velocity.x = +9;
+    }
 
-    if (e.keyCode == 38 || e.which == 38)
+    if (this.y <= 55) {
+      console.log(this.y);
+      if (e.keyCode == 40 || e.which == 40) {
+        window.app.playFire();
+        this.velocity.y = +14;
+      }
+
+      return false;
+    }
+    
+    if (e.keyCode == 38 || e.which == 38) {
+      window.app.playFire();
       this.velocity.y = -14;
-    else if (e.keyCode == 40 || e.which == 40)
-      this.velocity.y = +14;
+    }
 
     this.gotoAndPlay("fire");
   }

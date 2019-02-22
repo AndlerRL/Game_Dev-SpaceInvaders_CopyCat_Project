@@ -14,6 +14,12 @@
 
 <p>Code has been cleaned; less code comments and console.log/debug commented.</p>
 
+<strong><code>v0.8.2</code></strong>
+
+<p>SFX, Animations mounted completely to the game. The game's enemy animation has a simple movement, where each time that the enemy goes to the bottom on the screen will go to the top until all of them will destroyed. After all enemies are destroyed, it will return, but faster.</p>
+
+<p>It's true to say that there's no collission, put will do further. Other fixes such as load screen has been re-positioned and relocated SFX files properly.</p>
+
 <br/>
 <hr>
 <h6>About the Project:</h6>
