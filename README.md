@@ -9,6 +9,7 @@
 <li>Shooting is now a little bit faster.</li>
 <li>A game over screen show high score and last score saved from local storage (Web storage).</li>
 <li>UI/UX changed for better quality of the game. Simple, but fun! :)</li>
+ </ul>
 
 <strong><code>v0.8.2</code></strong>
 
