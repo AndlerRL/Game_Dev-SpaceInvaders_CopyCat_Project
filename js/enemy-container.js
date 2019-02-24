@@ -14,6 +14,13 @@
   const initY = EnemyContainer.prototype;
   const loaded = EnemyContainer.prototype;
 
+  let scoreCount = 0;
+  let lastScore = 0;
+  let highScore = 0;
+
+  let str_lastScore = localStorage.getItem('lastScore');
+  let str_highScore = localStorage.getItem('highScore');
+
   const vX = EnemyContainer.prototype;
   const vY = EnemyContainer.prototype;
 
@@ -33,7 +40,7 @@
     const self = this;
     this.loaded = false;
 
-    console.log('Initializing EnemyContainer');
+    // console.log('Initializing EnemyContainer');
 
     this.x = 0;
     this.y = 0;
@@ -54,9 +61,9 @@
     this.x += this.velocity.x;
     this.y += this.velocity.y;
 
-    if (this.x >= 125)
+    if (this.x >= 150)
       this.velocity.x = this.velocity.x * -1;
-    else if (this.x <= -125) {
+    else if (this.x <= -150) {
       this.velocity.x = this.velocity.x * -1;
 
       if (this.steps < 3)
@@ -73,6 +80,8 @@
 
   EnemyContainer.prototype.createEnemy = function () {
     if (!this.loaded) {
+      // window.app.playEnemy();
+
       if (this.indexEnemies < this.enemyCount * this.lines) {
         const enemyData = {
           images: [window.app.loader[window.app.enemyPath]],
@@ -110,12 +119,87 @@
   }
 
   EnemyContainer.prototype.testSpaceShip_shoot = function (shoot) {
+    if (shoot != null) {
+      for (let i = 0; i < this.enemies.length; i++) {
+        const enemy = this.enemies[i];
 
+        col = ndgmr.checkRectCollision(enemy, shoot);
+
+        if (col) {
+          enemy.explode();
+          scoreCount += 10;
+          this.enemies.splice(i, 1);
+          shoot.destroy();
+          this.testTotals();
+          this.score();
+
+          console.log(scoreCount);
+          break;
+        }
+      }
+    }
   }
 
   EnemyContainer.prototype.testSpaceShip_crash = function (spaceShip) {
+    if (spaceShip != null) {
+      for (let i = 0; i < this.enemies.length; i++) {
+        const enemy = this.enemies[i];
 
+        col = ndgmr.checkRectCollision(enemy, spaceShip);
+
+        if (col) {
+          enemy.explode();
+          this.enemies.splice(i, 1);
+          spaceShip.explode();
+
+          console.log('highScore: ' + highScore + '\n' + 'lastScore: ' + lastScore);
+
+          if ((str_lastScore == null || str_lastScore == "null") && (str_highScore == null || str_highScore == "null")) {
+            lastScore = scoreCount;
+            highScore = lastScore;
+          } else {
+            lastScore = parseInt(str_lastScore);
+            highScore = parseInt(str_highScore);
+          }
+
+          lastScore = scoreCount;
+
+          if (lastScore > highScore) {
+            highScore = lastScore;
+
+            localStorage.setItem('highScore', highScore);
+            localStorage.setItem('lastScore', lastScore);
+          }
+
+          const HighScore = document.getElementById('highScore');
+          HighScore.innerHTML = highScore;
+          
+          const LastScore = document.getElementById('lastScore');
+          LastScore.innerHTML = lastScore;
+
+          console.log('highScore: ' + highScore + '\n' + 'lastScore: ' + lastScore);
+          this.score();
+          break;
+        }
+      }
+    }
   }
+
+  EnemyContainer.prototype.testTotals = function () {
+    if (this.enemies.length == 0) {
+      this.init();
+      this.forward();
+    }
+  }
+
+  EnemyContainer.prototype.forward = function () {
+    this.velocity.x += 2.25;
+  }
+
+  EnemyContainer.prototype.score = function () {
+    const score = document.getElementById('score');
+    score.innerHTML = scoreCount;
+  };
 
   scope.EnemyContainer = EnemyContainer;
 }(window));

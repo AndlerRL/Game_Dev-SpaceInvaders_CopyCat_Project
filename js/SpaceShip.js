@@ -29,6 +29,14 @@
       x: 0,
       y: -10
     };
+
+    this.addEventListener('mousedown', e => {
+      self.handleMouseDown(e);
+    });
+
+    window.addEventListener('keypress', e => {
+      self.handleShoot(e);
+    })
   }
 
   SpaceShip.prototype.onTick = function () {
@@ -46,7 +54,12 @@
       this.x += this.velocity.x;
     }
 
-    if (this.currentFrame == 47) this.gotoAndPlay("run");
+    if (this.currentFrame == 47)
+      this.gotoAndPlay("run");
+    else if (this.currentFrame == 71) {
+      window.app.end();
+      this.parent.removeChild(this);
+    }
   }
 
   SpaceShip.prototype.jump = function (e) {
@@ -72,10 +85,10 @@
   SpaceShip.prototype.move = function (e) {
     if (e.keyCode == 37 || e.which == 37) {
       window.app.playFire();
-      this.velocity.x = -9;
+      this.velocity.x = -12;
     } else if (e.keyCode == 39 || e.which == 39) {
       window.app.playFire();
-      this.velocity.x = +9;
+      this.velocity.x = +12;
     }
 
     if (this.y <= 55) {
@@ -84,7 +97,6 @@
         window.app.playFire();
         this.velocity.y = +14;
       }
-
       return false;
     }
     
@@ -94,6 +106,30 @@
     }
 
     this.gotoAndPlay("fire");
+  }
+
+  SpaceShip.prototype.handleMouseDown = function (e) {
+    if (!this.exploting)
+      this.shoot();
+  }
+
+  SpaceShip.prototype.handleShoot = function (e) {
+    if (!this.exploting && e.keyCode == 32)
+      this.shoot();
+  }
+
+  SpaceShip.prototype.shoot = function (e) {
+    this.velocity.y = 0;
+    this.velocity.x = 0;
+    this.gotoAndPlay("run");
+
+    window.app.spaceShip_shoot(this.x + this.Width / 2 - 8, this.y);
+  }
+
+  SpaceShip.prototype.explode = function () {
+    window.app.playBoom();
+    this.exploting = true;
+    this.gotoAndPlay("boom");
   }
 
   scope.SpaceShip = SpaceShip;

@@ -7,6 +7,7 @@
 
   <title>Juego Arcade | Space Invaders Copy-cat</title>
   <link rel="stylesheet" href="css/materialize.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/space-anim.css">
 </head>
@@ -14,7 +15,9 @@
 <body>
   <div id="rotulo" class="hidden">
     <h1>Game Over</h1>
-    <a href="index.html" class="btn btn-float lime darken-4 text-light-blue text-lighten-4" id="play_again">Play Again</a>
+    <p>High Score: <span id="highScore" class="red-text text-darken-3">0</span></p>
+    <p>last score: <span id="lastScore" class="red-text text-darken-3">0</span></p>
+    <a href="javascript:;" class="btn btn-float lime darken-4 text-light-blue text-lighten-4" id="play_again">Play Again</a>
   </div>
 
   <div id="juego" class="space-bckgrnd">
@@ -33,6 +36,9 @@
       </div>
     </div>
 
+    <div align="left" class="score white-text">
+      score: <span id="score" class="red-text text-darken-3">0</span>
+    </div>
   </div>
 
 
@@ -71,6 +77,7 @@
 
 <script src="js/enemy-container.js"></script>
 <script src="js/enemy.js"></script>
+<script src="js/SpaceShip-shoot.js"></script>
 <script src="js/loader.js"></script>
 <script src="js/spaceShip.js"></script>
 <script src="js/app.js"></script>

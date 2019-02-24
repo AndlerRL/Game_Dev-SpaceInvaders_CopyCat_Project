@@ -36,18 +36,40 @@ a {
 }
 
 #rotulo {
-  background-color: #fafafad1;
+  background-color: #fafafafa;
   box-shadow: 0 0 1000px 500px rgba(139, 0, 0, 0.45);
   position: absolute;
-  top: 50%;
+  top: 45%;
   padding: 1rem;
   margin-top: -100px;
-  height: 200px;
+  height: 300px;
   width: 100%;
   text-align: center;
   vertical-align: central;
   z-index: 99;
 }
+
+#rotulo > p {
+  font-family: 'Orbitron';
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+}
+
+#rotulo > p #highScore {
+  font-size: 22px;
+}
+
+#rotulo > p #lastScore {
+  font-size: 14px;
+}
+
+#rotulo > a {
+  margin-top: 1.333rem;
+}
+
+#rotulo > p > span{
+  margin-left: 4px;
+} 
 
 .hidden {
   display: none;
@@ -60,6 +82,20 @@ a {
   width: 600px;
   vertical-align: central;
 }
+
+.score {
+  font-family: 'Orbitron';
+  font-size: 18px;
+  position: absolute;
+  letter-spacing: 1px;
+  font-weight: 600 !important;
+  top: 10px;
+  left: 10px;
+}
+
+.score > span {
+  margin-left: 4px;
+} 
 
 .controls {
   position: absolute;
@@ -81,7 +117,7 @@ a {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  font-family: monospace;
+  font-family: 'Orbitron';
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 100 !important;
@@ -90,7 +126,7 @@ a {
 
 .controls>div:nth-child(1) {
   color: #fafafa;
-  font-family: monospace;
+  font-family: 'Orbitron';
   letter-spacing: 1px;
   font-size: 20px;
   padding: 0;

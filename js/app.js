@@ -12,6 +12,8 @@
   const shoot = App.prototype;
   const _fps = App.prototype;
 
+  let scoreCount = 0;
+
   const SOUNDS = App.prototype;
   let loadedSounds = App.prototype;
 
@@ -31,6 +33,7 @@
     this.canvas = document.createElement('canvas');
     this.canvas.width = 600;
     this.canvas.height = 600;
+
     const container = document.getElementById('juego');
     container.appendChild(this.canvas);
 
@@ -40,7 +43,7 @@
     this.loader.onComplete = function () {
       self.loadedAssets();
     }
-    this.loader.loadImgs([spaceShip_path, _enemyPath /* , background_path */ , shootSpaceShip_path]);
+    this.loader.loadImgs([spaceShip_path, _enemyPath, shootSpaceShip_path]);
 
     if (createjs.Touch.isSupported()) {
       createjs.Touch.enable(this.stage);
@@ -124,7 +127,7 @@
 
   App.prototype.spaceShip_shoot = function (Xaxis, Yaxis) {
     if (this.shoot == null)
-      this.shoot = new this.SpaceShip_shoot(this.loader[shootSpaceShip_path], Xaxis, Yaxis);
+      this.shoot = new SpaceShip_Shoot(this.loader[shootSpaceShip_path], Xaxis, Yaxis);
   }
 
   App.prototype.end = function () {
@@ -133,8 +136,11 @@
 
     game_over.setAttribute('class', 'z-index');
     play_again.addEventListener("click", () => {
+      window.location.reload();
       game_over.setAttribute('class', 'hidden');
-    })
+    });
+
+    scoreCount = 0;
   }
 
   App.prototype.loadSounds = function () {
@@ -150,13 +156,16 @@
       SOUNDS.SOUNDS = {};
 
       SOUNDS.SOUNDS.FIRE = 'sfx/fire.m4a|sfx/fire.ogg';
-      createjs.Sound.registerSound(SOUNDS.SOUNDS.FIRE, "FIRE", 4);
+      createjs.Sound.registerSound(SOUNDS.SOUNDS.FIRE, "FIRE", 2);
 
       SOUNDS.SOUNDS.BOOM = 'sfx/boom.m4a|sfx/boom.ogg';
       createjs.Sound.registerSound(SOUNDS.SOUNDS.BOOM, "BOOM", 4);
 
       SOUNDS.SOUNDS.POP = 'sfx/pop.m4a|sfx/pop.ogg';
       createjs.Sound.registerSound(SOUNDS.SOUNDS.POP, "POP", 4);
+
+      /* SOUNDS.SOUNDS.ENEMY = 'sfx/enemy.m4a|sfx/enemy.ogg';
+      createjs.Sound.registerSound(SOUNDS.SOUNDS.ENEMY, "ENEMY", 4) */
     }
   }
 
@@ -183,6 +192,15 @@
     const myInstance = createjs.Sound.createInstance("POP");
     myInstance.play();
   }
+
+  /* App.prototype.playEnemy = function () {
+    const myInstance = createjs.Sound.createInstance("ENEMY");
+    const props = createjs.PlayPropsConfig().set({
+      interrupt: createjs.Sound.INTERRUPT_NONE,
+      loop: -1
+    })
+    myInstance.play();
+  } */
 
   App.prototype.loading_screen = function () {
     const load = document.getElementById('load');
